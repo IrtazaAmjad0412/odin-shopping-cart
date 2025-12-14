@@ -1,0 +1,23 @@
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 9rem;
+  color: #ffffff;
+}
+
+.header-section nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.header-section a {
+  color: #ffffffb4;
+  text-decoration: none;
+}
+
+.header-section a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
