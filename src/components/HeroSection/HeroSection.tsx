@@ -1,12 +1,12 @@
+import { Link } from "react-router-dom";
 import "./HeroSection.css";
 
 export const HeroSection = () => {
   return (
     <div className="hero-section">
-      <h2>Lorem ipsum dolor sit.</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sequi.</p>
-      <button type="button">Shop Now</button>
+      <h2>Welcome to Cartify!</h2>
+      <p>Quality products, seamless shopping.</p>
+      <Link to="/shop">Shop Now</Link>
     </div>
-    // Add link for button to shop page
   );
 };

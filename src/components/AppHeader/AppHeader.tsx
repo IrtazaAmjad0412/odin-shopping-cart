@@ -3,7 +3,6 @@ import "./AppHeader.css";
 
 export const AppHeader = () => {
   return (
-    // Add link for cartify h1 tag to the home page
     <div className="header-section">
       <div>
         <h1>Cartify</h1>

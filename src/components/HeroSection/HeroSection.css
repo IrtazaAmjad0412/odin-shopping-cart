@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 11.5rem;
-  color: #1b2944;
 }
 
 .hero-section h2 {
@@ -19,16 +18,16 @@
   margin: 1rem 0rem 1.5rem;
 }
 
-.hero-section button {
+.hero-section a {
   background-color: #1244a8;
   color: #ffffff;
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
-  border: none;
+  text-decoration: none;
   border-radius: 0.25rem;
 }
 
-.hero-section button:hover {
+.hero-section a:hover {
   background-color: #1153d6;
   cursor: pointer;
 }
