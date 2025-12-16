@@ -1,30 +1,22 @@
 import { useEffect, useState } from "react";
-import type { Product } from "../types/product";
+import { ProductList } from "../components/ProductList/ProductList";
 import { fetchAllProducts } from "../data/api";
+import type { Product } from "../types/product";
 
 export const Shop = () => {
   const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchAllProducts()
-      .then((data) => {
-        console.log(data);
-        setProducts(data);
-      })
-      .catch((err) => console.error("Error fetching Products:", err));
-    // Use .finally method to eventually set isLoading state
+      .then((data) => setProducts(data))
+      .catch((err) => console.error("Error fetching Products:", err))
+      .finally(() => setLoading(false));
   }, []);
 
   return (
     <div>
-      Shop Page
-      {products.map((product) => (
-        <div key={product.id}>
-          <img src={product.image} alt={product.title} />
-          <p>{product.title}</p>
-          <p>{product.price}</p>
-        </div>
-      ))}
+      <ProductList products={products} loading={loading} />
     </div>
   );
 };
