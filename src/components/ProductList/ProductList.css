@@ -1,0 +1,17 @@
+.product-list-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin: 2rem 0rem;
+  min-height: calc(100vh - 5.98rem);
+}
+
+.product-list-section.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
