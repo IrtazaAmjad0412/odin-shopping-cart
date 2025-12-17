@@ -14,9 +14,13 @@ export const Shop = () => {
       .finally(() => setLoading(false));
   }, []);
 
+  const addToCart = () => {
+    console.log("Clicked Add To Cart Button!");
+  };
+
   return (
     <div>
-      <ProductList products={products} loading={loading} />
+      <ProductList products={products} loading={loading} addToCart={addToCart} />
     </div>
   );
 };

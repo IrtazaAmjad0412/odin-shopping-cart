@@ -3,7 +3,7 @@ import { formatPrice } from "../../utils/utils";
 import type { ProductCardProp } from "../../types/props";
 import "./ProductCard.css";
 
-export const ProductCard = ({ product }: ProductCardProp) => {
+export const ProductCard = ({ product, addToCart }: ProductCardProp) => {
   const [quantity, setQuantity] = useState<number | "">(1);
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -52,7 +52,9 @@ export const ProductCard = ({ product }: ProductCardProp) => {
           +
         </button>
       </div>
-      <button type="button">Add To Cart</button>
+      <button type="button" onClick={addToCart}>
+        Add To Cart
+      </button>
     </div>
   );
 };
