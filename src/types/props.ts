@@ -3,10 +3,10 @@ import type { Product } from "./product";
 export type ProductListProps = {
   products: Product[];
   loading: boolean;
-  addToCart: () => void;
+  addToCart: (product: Product, quantity: number) => void;
 };
 
 export type ProductCardProp = {
   product: Product;
-  addToCart: () => void;
+  addToCart: (product: Product, quantity: number) => void;
 };

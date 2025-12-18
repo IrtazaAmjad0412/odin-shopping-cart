@@ -52,7 +52,7 @@ export const ProductCard = ({ product, addToCart }: ProductCardProp) => {
           +
         </button>
       </div>
-      <button type="button" onClick={addToCart}>
+      <button type="button" onClick={() => addToCart(product, Number(quantity) || 1)}>
         Add To Cart
       </button>
     </div>

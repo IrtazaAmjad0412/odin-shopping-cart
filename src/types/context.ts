@@ -1,0 +1,7 @@
+import type { CartItem } from "./cart";
+import type { Product } from "./product";
+
+export type OutletContext = {
+  cart: CartItem[];
+  addToCart: (product: Product, quantity: number) => void;
+};
