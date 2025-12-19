@@ -1,5 +1,5 @@
-import type { CartListProps } from "../../types/props";
 import { CartCard } from "../CartCard/CartCard";
+import type { CartListProps } from "../../types/props";
 import "./CartList.css";
 
 export const CartList = ({ cart, removeFromCart, updateCart }: CartListProps) => {
