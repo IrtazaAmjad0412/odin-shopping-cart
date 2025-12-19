@@ -1,0 +1,20 @@
+.cart-list-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45rem;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background-color: #1a2946;
+}
+
+.cart-list-section h1 {
+  margin: 0;
+}
+
+.cart-list-section p {
+  font-size: 1rem;
+}
