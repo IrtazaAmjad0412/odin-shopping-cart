@@ -2,7 +2,7 @@ import type { CartListProps } from "../../types/props";
 import { CartCard } from "../CartCard/CartCard";
 import "./CartList.css";
 
-export const CartList = ({ cart }: CartListProps) => {
+export const CartList = ({ cart, removeFromCart, updateCart }: CartListProps) => {
   const showCartStatus = cart.length === 0;
 
   return (
@@ -11,7 +11,14 @@ export const CartList = ({ cart }: CartListProps) => {
       {showCartStatus ? (
         <p>Your Cartify Cart is empty</p>
       ) : (
-        cart.map((item) => <CartCard key={item.id} item={item} />)
+        cart.map((item) => (
+          <CartCard
+            key={item.id}
+            item={item}
+            removeFromCart={removeFromCart}
+            updateCart={updateCart}
+          />
+        ))
       )}
     </div>
   );

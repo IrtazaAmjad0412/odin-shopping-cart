@@ -15,3 +15,38 @@
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
+
+.cart-card-section .cart-card-details {
+  width: 100%;
+}
+
+.cart-card-section .quantity-control button {
+  width: 10%;
+  font-size: 1rem;
+  padding: 0.25rem;
+  margin: 0rem 1rem 0rem 0rem;
+  border: 0.09rem solid #ffffffb4;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  background-color: #234791;
+  cursor: pointer;
+}
+
+.cart-card-section .quantity-control button:hover {
+  background-color: #0b4ccf;
+}
+
+.cart-card-section .quantity-control button:disabled {
+  background-color: #1a2946;
+  cursor: not-allowed;
+}
+
+.cart-card-section .cart-card-details .remove-btn {
+  width: 20%;
+  border: none;
+  background-color: #a51212;
+}
+
+.cart-card-section .cart-card-details .remove-btn:hover {
+  background-color: #680c0c;
+}

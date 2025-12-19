@@ -14,8 +14,12 @@ export type ProductCardProp = {
 
 export type CartListProps = {
   cart: CartItem[];
+  removeFromCart: (product: Product) => void;
+  updateCart: (product: Product, quantity: number) => void;
 };
 
 export type CartCardProp = {
   item: CartItem;
+  removeFromCart: (product: Product) => void;
+  updateCart: (product: Product, quantity: number) => void;
 };
