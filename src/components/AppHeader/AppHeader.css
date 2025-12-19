@@ -21,3 +21,13 @@
   color: #ffffff;
   text-decoration: underline;
 }
+
+.header-section .cart-link {
+  position: relative;
+}
+
+.header-section .cart-badge {
+  position: absolute;
+  top: 1.25rem;
+  right: 8.5rem;
+}

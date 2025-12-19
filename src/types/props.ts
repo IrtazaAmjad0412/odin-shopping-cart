@@ -23,3 +23,7 @@ export type CartCardProp = {
   removeFromCart: (product: Product) => void;
   updateCart: (product: Product, quantity: number) => void;
 };
+
+export type AppHeaderProp = {
+  cartItemCount: number;
+};
